@@ -1,4 +1,4 @@
-package c.themoviedb.themoviedb.Layouts
+package c.themoviedb.themoviedb.Activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -17,12 +17,10 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.HttpException
 import java.util.concurrent.TimeUnit
-import android.app.PendingIntent.getActivity
-import android.content.res.Configuration
 import c.themoviedb.themoviedb.R
 
 
-class MainActivity : AppCompatActivity() {
+class SearchActivity : AppCompatActivity() {
     private var disposable: Disposable? = null
     private var mCompositeDisposable: CompositeDisposable? = null
     private var moviesList: ArrayList<Movies>? = null
@@ -92,7 +90,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun verifyItems() {
         Thread(Runnable {
-            this@MainActivity.runOnUiThread {
+            this@SearchActivity.runOnUiThread {
                 if(this.moviesList == null || this.moviesList!!.size == 0){
                     this.txt_search.text = getString(R.string.message_search_movie)
                     this.txt_search.visibility = View.VISIBLE

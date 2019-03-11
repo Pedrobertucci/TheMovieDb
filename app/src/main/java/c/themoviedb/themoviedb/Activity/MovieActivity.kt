@@ -1,11 +1,8 @@
-package c.themoviedb.themoviedb.Layouts
+package c.themoviedb.themoviedb.Activity
 
-import android.annotation.SuppressLint
 import android.graphics.Typeface
-import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.annotation.RequiresApi
 import c.themoviedb.themoviedb.Models.Movies
 import c.themoviedb.themoviedb.R
 import c.themoviedb.themoviedb.Utils.Consts
