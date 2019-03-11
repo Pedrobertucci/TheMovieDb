@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TheMovieDb</string>
+    <string name="message_search_movie">Find your next movie.</string>
+    <string name="message_no_movie">No movies found.</string>
+</resources>
